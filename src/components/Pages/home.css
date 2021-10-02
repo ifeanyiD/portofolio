@@ -1,0 +1,12 @@
+.H_about{
+    height: 100vh;
+}
+.H_header span{
+    font-weight: bold;
+    font-size: 3.5em;
+    line-break: auto;
+}
+.H_about .container_page{
+    all: unset;
+    height: 100vh;
+}

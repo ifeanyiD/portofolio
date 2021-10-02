@@ -1,0 +1,289 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+/* PROFILE PAGE CSS*/
+.profile{
+    text-align: center;
+    background-color: black;
+    height: 20vh;
+}
+.profile span{
+    font-size: 0.67em;
+}
+
+
+/* ABOUT ME PAGE CSS*/
+.container_page{
+    background-color:rgb(43, 42, 42);
+    overflow: hidden;
+}
+.bubble1, .bubble2, .bubble3, .bubble4{
+    position: fixed;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: all .05s ;
+    opacity: 0;
+}
+.bubble2{
+    width: 15px;
+    height: 15px;
+    transition: all 0.2s;
+}
+.bubble3{
+    width: 10px;
+    height: 10px;
+    transition: all 0.4s;
+}
+.bubble4{
+    width: 5px;
+    height: 5px;
+    font-weight: bold;
+    transition: all 0.6s;
+}
+
+
+
+    /*Css for skills*/
+.before::before{
+    display: block;
+    content: "<!doctype> \A <html> \A <david>";
+    white-space: pre;
+    font-size: 0.8em;
+    color: grey;
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.after::after{
+    display: block;
+    content: "</david> \A </html>";
+    white-space: pre;
+    font-size: 0.8em;
+    color: grey;
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.title{
+     font-size: 3.5em;
+     font-weight: bold;
+     line-height: 1em;
+     color: rgb(108, 39, 197);
+     margin-bottom: 10px;
+}
+.title .space{
+    padding-left: .5em;
+}
+.title span{
+    display: inline-block;
+    transform: scaleY(1);
+}
+.title span:nth-child(1){
+    opacity: 0;
+    animation: fade 1s ease-out;
+}
+.title span:nth-child(2){
+    animation: fade 1.1s ease-out;
+}
+.title span:nth-child(3){
+    opacity: 0;
+    animation: fade 1s;
+}
+.title span:nth-child(4){
+    opacity: 0;
+    animation: fade 1.3s ease-out;
+}.title span:nth-child(5){
+    opacity: 0;
+    animation: fade 1.4s ease-out;
+}
+.title span:nth-child(6){
+    opacity: 0;
+    animation: fade 1.5s ease-out;
+}
+.title span:nth-child(7){
+    opacity: 0;
+    animation: fade 1.7s ease-out;
+}
+.title span:nth-child(8){
+    opacity: 0;
+    animation: fade 1.6s ease-out;
+}
+.title span:nth-child(9){
+    opacity: 0;
+    animation: fade 1.7s ease-out;
+}
+.title span:nth-child(10){
+    opacity: 0;
+    animation: fade 1.8s ease-out;
+}
+.title span:nth-child(11){
+    opacity: 0;
+    animation: fade 1.9s ease-out;
+}
+.title span:nth-child(12){
+    opacity: 0;
+    animation: fade 2s ease-out;
+}
+.title span:nth-child(13){
+    opacity: 0;
+    animation: fade 2.1s ease-out;
+}
+.title span:nth-child(14){
+    opacity: 0;
+    animation: fade 2.2s ease-out;
+}
+.title span:nth-child(15){
+    opacity: 0;
+    animation: fade 2.3s ease-out;
+}
+.title span:nth-child(16){
+    opacity: 0;
+    animation: fade 2.4s ease-out;
+}
+.title span:nth-child(17){
+    opacity: 0;
+    animation: fade 2.5s ease-out;
+}
+.title span:nth-child(18){
+    opacity: 0;
+    animation: fade 2.6s ease-out;
+}
+.title span:nth-child(19){
+    animation: fade 2.7s ease-out;
+}
+.title span:nth-child(20){
+    animation: fade 2.8s ease-out;
+}
+.title span:nth-child(21){
+    animation: fade  2.9s ease-out;
+}
+
+@keyframes fade{
+    0%{
+        opacity:0;
+    }
+    70%{
+        opacity: 0.03;
+    }
+    100%{
+        transform: scaleY(0.5);
+
+    }
+}
+@keyframes toggle {
+    0%{
+        transform: scaleY(0.5);
+    }
+}
+
+.skill_level{
+    margin-bottom: 1.5em;
+}
+.skill_level span{
+    font-weight: bold;
+}
+.skill_level footer{
+    width: 100%;
+    height: 0.15em;
+    background-color: honeydew;
+    margin-top: 6px !important;
+
+}
+.front_end{
+    width: 96%;
+    height: 100%;
+    background-color:green;
+    animation: runner 3s linear;
+}
+.back_end{
+    width: 50%;
+    height: 100%;
+    background-color:rgb(128, 0, 122);
+    animation: runner 1s linear;
+}
+.footer1{
+    width: 85%;
+    height: 100%;
+    background-color: blue;
+    animation: runner 2s linear;
+}
+.footer2{
+    width: 93%;
+    height: 100%;
+    background-color:green;
+    animation: runner 2.5s linear;
+}
+.footer3{
+    width: 62%;
+    height: 100%;
+    background-color:rgb(128, 0, 122);
+    animation: runner 1.7s linear;
+}
+.footer4{
+    width: 59%;
+    height: 100%;
+    background-color:rgb(179, 55, 17);
+    animation: runner 1.3s linear;
+}
+
+@keyframes runner{
+    0%{
+        width: 0%;
+    }
+}
+
+
+    /*Css for Contact*/
+form{
+    color: white !important;
+}
+.contact_form{
+    width: 100%;
+}
+.contact_form >textarea{
+    margin-top: 10px;
+    box-shadow: 1px 1px 1px rgb(78, 74, 69), -1px -1px 1px rgb(78, 74, 69);
+    outline: none;
+    resize: vertical;
+    color: rgb(235, 213, 213) !important;
+    background-color: rgb(19, 17, 15);
+    width: 100%;
+    min-height: 100px;
+}
+.contact_form input{
+    width: 100%;
+    margin-top: 10px;
+    box-shadow: 1px 1px 1px rgb(78, 74, 69, 0.5), -1px -1px 1px rgb(78, 74, 69,0.5);
+    padding:10px 4px;
+    outline: none;
+    color: white;
+    background-color: rgb(19, 17, 15);
+}
+::placeholder{
+    color: rgb(229, 226, 240);
+    font-weight: bold;
+    opacity: 0.2;
+    
+}
+.contact_form1:focus{
+    border-top:red 2px solid;
+    transition: 0.4s ease-in;
+}
+
+.contact_form2:focus{
+    border-top:green 2px solid;
+    transition: 0.4s ease-in;
+}
+.contact_form Button:hover{
+    background-color: blueviolet;
+    transition: 2s cubic-bezier(1, 1, 1, 1);
+}
+.contact_form button{
+    background-color: transparent;
+    border:2px solid gray;
+    color:green;
+    font-weight: bold;
+    font-size: 1.2em;
+}

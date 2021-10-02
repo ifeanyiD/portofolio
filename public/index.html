@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <title>Portfolio</title>
+    <script src="jquery-3.4.1.min.js"></script>
+
+  </head>
+  <body>
+    <script>
+      $(document).mouseenter(()=>{
+       $(".container_page").mousemove(e=>{
+         $(".bubble1").css({left:e.pageX, top:e.pageY, opacity:1});
+         $(".bubble2").css({left:e.pageX, top:e.pageY, opacity:1});
+         $(".bubble3").css({left:e.pageX, top:e.pageY, opacity:1});
+         $(".bubble4").css({left:e.pageX, top:e.pageY, opacity:1});
+         
+       });
+       $(".container_page").mouseout(e=>{
+         $(".bubble1").css({left:e.pageX, top:e.pageY, opacity:0});
+         $(".bubble2").css({left:e.pageX, top:e.pageY, opacity:0});
+         $(".bubble3").css({left:e.pageX, top:e.pageY, opacity:0});
+         $(".bubble4").css({left:e.pageX, top:e.pageY, opacity:0});
+        })
+       });
+    </script>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+</html>
